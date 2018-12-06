@@ -28,7 +28,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'slim-rails'
-gem 'therubyracer', :platform=>:ruby
+gem 'mini_racer', :platform=>:ruby
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -44,3 +44,8 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+
+gem 'autoprefixer-rails'
+gem 'nokogiri'
+gem 'selenium-webdriver'
+gem 'byebug'
