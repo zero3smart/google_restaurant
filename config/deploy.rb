@@ -8,7 +8,7 @@ set :application, "google_restaurant"
 set :repo_url, "git@github.com:zero2smart/google_restaurant.git"
 set :user, "ubuntu"
 set :branch, "master"
-set :deploy_to, "/home/ubuntu/google_restaurant"
+
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 set :pty,             true
