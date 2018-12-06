@@ -2,7 +2,7 @@ module BookHelper
     def book_time
         options = Selenium::WebDriver::Chrome::Options.new
         options.add_argument('--headless')
-        Selenium::WebDriver::Chrome.driver_path="/home/skyblue/Workspaces/thomas_work/Selenium/bin/chromedriver"
+        Selenium::WebDriver::Chrome.driver_path=Dir.pwd + "/bin/chromedriver"
         driver = Selenium::WebDriver.for :chrome, options: options
 
 
