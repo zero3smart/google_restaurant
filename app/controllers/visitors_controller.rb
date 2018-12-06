@@ -1,7 +1,6 @@
 class VisitorsController < ApplicationController
     helper BookHelper
     def index
-        # @times = helpers.book_time
-        @times = []
+        @times = helpers.book_time
     end
 end
