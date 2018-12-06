@@ -18,8 +18,8 @@ development:
   encoding: unicode
   database: google_restaurant_development
   pool:     5
-  username: postgres
-  password: postgres
+  username: maven
+  password: password
   template: template0
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -46,8 +46,8 @@ test:
   encoding: unicode
   database: google_restaurant_test
   pool:     5
-  username: postgres
-  password: postgres
+  username: maven
+  password: password
   template: template0
 
 production:
@@ -56,6 +56,6 @@ production:
   encoding: unicode
   database: google_restaurant_production
   pool:     5
-  username: postgres
-  password: postgres
+  username: maven
+  password: password
   template: template0

@@ -6,7 +6,7 @@ server '3.16.216.192', roles: [:web, :app, :db], primary: true
 
 set :application, "google_restaurant"
 set :repo_url, "git@github.com:zero2smart/google_restaurant.git"
-set :user, "zero2smart"
+set :user, "ubuntu"
 set :branch, "master"
 set :deploy_to, "/home/ubuntu/google_restaurant"
 set :puma_threads,    [4, 16]
