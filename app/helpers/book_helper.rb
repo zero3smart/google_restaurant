@@ -19,13 +19,13 @@ module BookHelper
         element = driver.find_element(:id, "searchbox-searchbutton")
         element.click()
 
-        loop do
+        # loop do
             element = driver.find_elements(:class, "internal-place-actions-link")
             if element.any?
                 element[0].click()
-                break
+                # break
             end
-        end
+        # end
 
         byebug
 
