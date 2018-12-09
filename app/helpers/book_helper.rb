@@ -64,7 +64,7 @@ module BookHelper
             if element.attribute('aria-label') == r_date_obj.day().to_s
                 element.click()
                 puts "click"
-                sleep 3
+                sleep 1
                 break
             end
         end
