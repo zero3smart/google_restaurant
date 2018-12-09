@@ -31,9 +31,9 @@ module BookHelper
 
         sleep 1
 
-        @driver.find_element(:css, "#select_a_boundary.dataset_select2")
-        @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
-        arrow = driver.find_element_by_xpath('//div[@id="abc" and @class="xyz"]')
+        # @driver.find_element(:css, "#select_a_boundary.dataset_select2")
+        # @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
+        # arrow = driver.find_element_by_xpath('//div[@id="abc" and @class="xyz"]')
 
         element = driver.find_element(:css, ".bKA5T")
         element.click()
