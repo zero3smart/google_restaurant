@@ -33,41 +33,41 @@ module BookHelper
         # @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
         # arrow = driver.find_element_by_xpath('//div[@id="abc" and @class="xyz"]')
 
-        element = driver.find_element(:css, ".bKA5T")
-        element.click()
+        # element = driver.find_element(:css, ".bKA5T")
+        # element.click()
 
-        sleep 1
+        # sleep 1
 
-        if year_diff > 0
-            year_diff.abs.times do
-                element = driver.find_element(:css, ".Ny2ATe div[role=button]")
+        # if year_diff > 0
+        #     year_diff.abs.times do
+        #         element = driver.find_element(:css, ".Ny2ATe div[role=button]")
 
-                if element.attribute('aria-label') == 'previous month'
-                    element.click()
-                    sleep 1
-                end
-            end
-        elsif year_diff < 0
-            year_diff.abs.times do
-                element = driver.find_element(:css, ".Ny2ATe.m7vaFf div[role=button]")
+        #         if element.attribute('aria-label') == 'previous month'
+        #             element.click()
+        #             sleep 1
+        #         end
+        #     end
+        # elsif year_diff < 0
+        #     year_diff.abs.times do
+        #         element = driver.find_element(:css, ".Ny2ATe.m7vaFf div[role=button]")
 
-                if element.attribute('aria-label') == 'next month'
-                    element.click()
-                    sleep 1
-                end
-            end
-        end
+        #         if element.attribute('aria-label') == 'next month'
+        #             element.click()
+        #             sleep 1
+        #         end
+        #     end
+        # end
 
-        elements = driver.find_elements(:css, ".ekHVrb.Ny2ATe div[role=button]")
+        # elements = driver.find_elements(:css, ".ekHVrb.Ny2ATe div[role=button]")
 
-        elements.each do |element|
-            if element.attribute('aria-label') == r_date_obj.day().to_s
-                element.click()
-                puts "click"
-                sleep 1
-                break
-            end
-        end
+        # elements.each do |element|
+        #     if element.attribute('aria-label') == r_date_obj.day().to_s
+        #         element.click()
+        #         puts "click"
+        #         sleep 1
+        #         break
+        #     end
+        # end
 
         page_source = driver.page_source
         book_time = []
