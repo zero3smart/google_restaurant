@@ -55,3 +55,8 @@ gem 'autoprefixer-rails'
 gem 'nokogiri'
 gem 'selenium-webdriver'
 gem 'byebug'
+gem "font-awesome-rails"
+gem 'md-date-time-picker-rails'
+gem 'momentjs-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'jquery-ui-rails'

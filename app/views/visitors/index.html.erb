@@ -1,6 +1,36 @@
-<h3>Restaurant Name: Blue Dalia Restaurant & Tequila Bar</h3>
+<%= form_tag(root_path, method: "get") do %>
+  <div class="form-group row">
+    <%= label_tag("Restaurant Name", "Restaurant Name", :class => "col-md-2 col-form-label") %>
+    <div class="input-group mb-3 col-md-10">
+      <%= text_field_tag(
+        :restaurant_name,
+        "Blue Dalia Restaurant & Tequila Bar",
+        class: "form-control",
+        placeholder: "Search Google Maps",
+        "aria-label": "Search Google Maps",
+        "aria-describedby": "basic-addon2",
+        ) %>
+      <div class="input-group-append">
+        <button type="submit" class="input-group-text" id="basic-addon2">
+            <%= fa_icon "search" %>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Date" class="col-md-2 col-form-label">Date</label>
+    <div class="col-md-10">
+      <%= text_field_tag(
+        :reserve_date,
+        @current_time,
+        class: "form-control datepicker",
+        placeholder: "Date"
+      ) %>
+    </div>
+  </div>
+<% end %>
 <div>
-    <% @times.each do |time| %>
-        <button type="button" class="btn btn-link" style="border: 1px solid #007bff"><%= time %></button>
-    <% end %>
+  <% @times.each do |time| %>
+    <button type="button" class="btn btn-link" style="border: 1px solid #007bff"><%= time %></button>
+  <% end %>
 </div>

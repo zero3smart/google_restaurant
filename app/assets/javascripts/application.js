@@ -14,4 +14,23 @@
 //= require popper
 //= require rails-ujs
 //= require bootstrap-sprockets
+//= require bootstrap-datepicker
+//= require jquery-ui
+//= require jquery-ui/widgets/datepicker
+//= require moment
 //= require_tree .
+
+
+$(function () {
+    $('.datepicker').datepicker();
+
+    $('#restaurant_name').keyup(function(e) {
+        if (e.keyCode == 13) {
+
+        }
+    });
+
+    $('#reserve_date').change(function () {
+
+    });
+});
