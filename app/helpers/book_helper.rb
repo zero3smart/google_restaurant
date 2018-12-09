@@ -27,18 +27,20 @@ module BookHelper
             end
         # end
 
+
+
+        sleep 1
+
+        @driver.find_element(:css, "#select_a_boundary.dataset_select2")
+        @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
+        arrow = driver.find_element_by_xpath('//div[@id="abc" and @class="xyz"]')
+
+        element = driver.find_element(:css, ".bKA5T")
+        element.click()
+
+        sleep 1
+
         byebug
-
-        # sleep 1
-
-        # @driver.find_element(:css, "#select_a_boundary.dataset_select2")
-        # @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
-        # arrow = driver.find_element_by_xpath('//div[@id="abc" and @class="xyz"]')
-
-        # element = driver.find_element(:css, ".bKA5T")
-        # element.click()
-
-        # sleep 1
 
         # if year_diff > 0
         #     year_diff.abs.times do
