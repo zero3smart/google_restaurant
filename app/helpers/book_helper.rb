@@ -27,7 +27,7 @@ module BookHelper
             end
         # end
 
-        sleep 3
+        sleep 10
 
         # @driver.find_element(:css, "#select_a_boundary.dataset_select2")
         # @driver.find_element(:css, "div[id=select_a_boundary][class=dataset_select2]")
